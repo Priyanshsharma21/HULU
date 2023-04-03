@@ -5,7 +5,7 @@ import { Col, Row } from 'antd';
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div className="text-white">Home</div>
   )
 }
 

@@ -2,7 +2,7 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
 
 const baseUrl = 'https://api.themoviedb.org/3'
-const API_KEY = '726f92e1f400054de4c2b4b7a406470a'
+const API_KEY = import.meta.env.VITE_TMDB_API_KEY
 
 export const tmdbApi = createApi({
     reducerPath : 'tmdbApi',
