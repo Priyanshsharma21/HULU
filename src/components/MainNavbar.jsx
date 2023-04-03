@@ -3,10 +3,13 @@ import { AiOutlineUser } from 'react-icons/ai'
 import { FaSearch } from 'react-icons/fa'
 import { CiSearch } from 'react-icons/ci'
 import { Link, useNavigate } from 'react-router-dom'
+import { navLinks} from '../const/index'
+
 
 const MainNavbar = () => {
     const [showSearchBar, setShowSearchBar] = useState(false)
     const [search, setSearch] = useState('')
+    const [active, setActive] = useState('home')
     const navigate = useNavigate()
 
     const handleScroll = () => {
@@ -39,10 +42,15 @@ const MainNavbar = () => {
         setShowSearchBar(false) 
       }
 
+      const handleLinkNavigation = (id,to)=>{
+        setActive(id)
+        navigate(to)
+      }
+
 
   return (
-    <nav className="main_nav w-full h-[70px] flex justify-between items-center mt-5">
-        <div className="main_nav_list ml-5">
+    <nav className="main_nav w-full h-[70px] flex justify-between items-center  fixed z-10 top-0">
+        <div className="main_nav_list ml-5 flex justify-center items-center">
         {showSearchBar ? (
             <form className="searchnav mmc relative mr-5" onSubmit={handleSearchSubmit}>
             <CiSearch onClick={()=>setShowSearchBar(false)} className='text-slate-300 cursor-pointer absolute top-[14.3px] left-[8.3px] text-[1rem]' />
@@ -53,6 +61,15 @@ const MainNavbar = () => {
             <CiSearch onClick={()=>setShowSearchBar(true)} className='text-slate-300 cursor-pointer text-[1.4rem]' />
           </div>
           )}
+
+
+          <div className="home_nav_links flex">
+            {navLinks?.map((link,i)=>(
+              <div onClick={()=>handleLinkNavigation(link.id, link.to)} className={`${link.id===active ? 'links_of_nav bg-[#90909088] text-white rounded-md pt-[0.1rem] pl-[1rem] pr-[1rem] pb-[0.1rem]' : 'links_of_nav text-[#dbdbdb] '}`}>
+                {link.title}
+              </div>
+            ))}
+          </div>
         </div>
 
 

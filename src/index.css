@@ -26,6 +26,8 @@ body {
   background: rgb(0, 0, 0);
 }
 
+/* auth css */
+
 .userIcon {
   background: gray;
   padding: 0.4rem;
@@ -302,4 +304,27 @@ button {
   .bannerauthdetails{
     margin-left: 0.2rem;
   }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Home Css */
+.links_of_nav{
+  font-size: 1.12rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  margin-left: 2.2rem;
+  cursor: pointer;
+}
+
+.demos{
+  color : ''#c337639d', '#714f1d9a', '#37ce29a7', '#c5222294''
 }
