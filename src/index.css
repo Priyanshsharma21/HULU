@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Bangers&family=Bebas+Neue&family=Cabin+Sketch:wght@400;700&family=Castoro&family=Cinzel:wght@500;600;700&family=Comfortaa:wght@400;500&family=Dosis:wght@300;400&family=Fredoka:wght@300&family=Gloria+Hallelujah&family=Halant:wght@300&family=IBM+Plex+Sans:wght@100;200;300;500&family=Josefin+Sans:ital,wght@0,200;0,500;1,100&family=Lobster&family=M+PLUS+1:wght@200&family=Marcellus+SC&family=Maven+Pro:wght@500;600&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;400&family=Mukta:wght@200&family=Nanum+Gothic:wght@700&family=News+Cycle&family=Newsreader:opsz,wght@6..72,200;6..72,400&family=Noto+Sans&family=Nunito+Sans&family=Open+Sans:wght@400;500&family=Oswald&family=PT+Sans+Narrow:wght@400;700&family=Phudu:wght@300;400&family=Playfair+Display:wght@500;900&family=Poppins&family=Press+Start+2P&family=Prompt&family=Quicksand:wght@300;400&family=Raleway:ital,wght@0,200;0,500;1,400&family=Readex+Pro:wght@600&family=Reem+Kufi+Fun:wght@400;500&family=Roboto:ital,wght@0,100;1,400&family=Rubik+Vinyl&family=Sarabun:wght@200&family=Satisfy&family=Signika:wght@300&family=Source+Code+Pro:wght@300;700&family=Source+Sans+Pro&family=Syncopate:wght@400;700&family=Tajawal&family=Ubuntu:ital,wght@0,300;1,700&family=Varela+Round&display=swap');
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +19,7 @@ body {
 
 ::-webkit-scrollbar {
   width: 5px;
+  display: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -310,11 +315,27 @@ button {
 
 
 
+.mobile_input:focus-visible{
+  border: none;
 
+}
 
+.mobile_input{
+  background: #ffffff08;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: white;
+}
+.mmtp{
+  margin-top: 1rem;
+  transition: all 0.3s linear;
+  margin-left: 1rem;
+}
 
-
-
+.mobile_menu{
+  transition: all 0.5s ease-in-out;
+}
 
 /* Home Css */
 .links_of_nav{
@@ -327,4 +348,115 @@ button {
 
 .demos{
   color : ''#c337639d', '#714f1d9a', '#37ce29a7', '#c5222294''
+}
+
+
+.start_watching{
+  font-size: 1rem;
+  letter-spacing: 0.2rem;
+}
+
+.banner_title{
+  color: white;
+  font-size: 3.2rem;
+  max-width: 600px;
+  line-height: 4rem;
+}
+
+.banner_description{
+    color: white;
+  /* font-size: 4rem; */
+}
+
+.banner_data{
+  z-index: 9;
+  margin-top: 10%;
+  margin-left: 8%;
+}
+
+.banner_title{
+  margin-top: 0.5rem;
+}
+
+.banner_description{
+  font-size: 1.2rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+  max-width: 500px;
+  margin-top: 0.6rem;
+  color: rgba(255, 255, 255, 0.806);
+}
+
+.play,.details{
+  width: 120px;
+  height: max-content;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.2rem;
+}
+
+.btns_banner{
+  margin-top: 2rem;
+}
+
+.play_title,
+.details_title{
+  font-size: 1rem;
+}
+
+.rating{
+  font-size: 1rem;
+  font-weight: 500;
+  color: white;
+}
+
+.orignals_banner_logo{
+  color: white;
+  font-size: 1rem;
+}
+
+
+.card_main{
+  z-index: 30;
+}
+
+.card_main{
+  box-shadow: 0px 0px 20px rgb(52, 52, 52);
+}
+
+.movie_card_main{
+  border-radius: 0.3rem;
+}
+
+.demo{
+  color: #00000045
+}
+
+.start_watching_card{
+  font-size: 0.9rem;
+  letter-spacing: 0.2rem;
+  font-weight: 500;
+}
+
+.card_title{
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+.meta{
+  font-weight: 400;
+  font-size: 1rem;
+}
+
+
+@media (max-width: 991px) {
+  
+}
+
+
+.hamBurgir{
+  z-index: 1000;
 }
