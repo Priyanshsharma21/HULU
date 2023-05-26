@@ -134,9 +134,9 @@ const Auth = () => {
 
 
         <section className="sec3 truth_height w-full min-h-[100vh] flex flex-col items-center justify-center">
-          <div className="auth_banner_title text-[0.9rem]  text-green-400">HULU + LIVE TV, NOW WITH DISNEY+ AND ESPN+, ALL WITH ADS</div>
+          <div className="auth_banner_title text-[0.9rem]  text-green-400">REVU + LIVE TV, NOW WITH DISNEY+ AND ESPN+, ALL WITH ADS</div>
           <div className="auth_s2title mt-4 font-semibold text-white text-[2rem] ">Live TV Makes It Better</div>
-          <div className="auths2desc mt-6 text-[1rem] text-white font-semibold">Make the switch from cable. Get 85+ top channels on Hulu (With Ads) + Live TV with your favorite live sports, news, and events - plus the entire Hulu streaming library. With Unlimited DVR, store Live TV recordings for up to nine months and fast-forward through your DVR content. Access endless entertainment with Disney+ and live sports with ESPN+. </div>
+          <div className="auths2desc mt-6 text-[1rem] text-white font-semibold">Make the switch from cable. Get 85+ top channels on Revu (With Ads) + Live TV with your favorite live sports, news, and events - plus the entire Revu streaming library. With Unlimited DVR, store Live TV recordings for up to nine months and fast-forward through your DVR content. Access endless entertainment with Disney+ and live sports with ESPN+. </div>
 
           <div className="text-slate-400 text-[0.6rem] mt-6 s3conti">
           Regional restrictions, blackouts and Live TV terms apply. Access content from each service separately. Location data required to watch certain content. Unlimited DVR recording is not available for on-demand shows.

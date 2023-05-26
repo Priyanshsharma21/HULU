@@ -5,6 +5,11 @@ import SearchResults from './SearchResults'
 import MyStuff from './MyStuff'
 import Movies from './Movies'
 import Shows from './Shows'
+import MovieDetails from './MovieDetails'
+import ArtistDetails from './ArtistDetails'
+import Creator from './Creator'
+
+
 
 export {
     Auth,
@@ -13,4 +18,7 @@ export {
     MyStuff,
     Movies,
     Shows,
+    MovieDetails,
+    ArtistDetails,
+    Creator
 }

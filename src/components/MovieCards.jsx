@@ -1,34 +1,32 @@
 import React, { useRef } from 'react';
+import moment from 'moment'
+import { Link } from 'react-router-dom';
+import { AiOutlinePlus } from 'react-icons/ai'
+import { Button, message, Space } from 'antd';
 
-const MovieCards = ({ movies, title }) => {
+
+const MovieCards = ({ movies, title,type }) => {
   const containerRef = useRef(null);
+  const [messageApi, contextHolder] = message.useMessage()
 
+  const handleAddMovie = (event,movie) => {
+    event.preventDefault();
+    event.stopPropagation();
+    const moviesArray = JSON.parse(localStorage.getItem('movies')) || [];
+    moviesArray.push(movie);
+    localStorage.setItem('movies', JSON.stringify(moviesArray));
 
-  //   {
-//     "adult": false,
-//     "backdrop_path": "/ovM06PdF3M8wvKb06i4sjW3xoww.jpg",
-//     "id": 76600,
-//     "title": "Avatar: The Way of Water",
-//     "original_language": "en",
-//     "original_title": "Avatar: The Way of Water",
-//     "overview": "Set more than a decade after the events of the first film, learn the story of the Sully family (Jake, Neytiri, and their kids), the trouble that follows them, the lengths they go to keep each other safe, the battles they fight to stay alive, and the tragedies they endure.",
-//     "poster_path": "/t6HIqrRAclMCA60NsSmeqe9RmNV.jpg",
-//     "media_type": "movie",
-//     "genre_ids": [
-//         878,
-//         12,
-//         28
-//     ],
-//     "popularity": 8097.311,
-//     "release_date": "2022-12-14",
-//     "video": false,
-//     "vote_average": 7.751,
-//     "vote_count": 6570
-// }
+    messageApi.open({
+      type: 'success',
+      content: `${movie?.title || movie?.name} added to your watch list`,
+    });
+  }
+
 
 
   return (
     <>
+     {contextHolder}
       {movies ? (
         <div className="flex flex-col card_main">
           <div className="title text-white ml-5 text-[1.5rem] font-medium">
@@ -36,9 +34,9 @@ const MovieCards = ({ movies, title }) => {
           </div>
           <div className="overflow-x-auto flex mt-5" ref={containerRef}>
             {movies.map((movie) => (
-              <div className="flex ml-5" key={movie.id}>
+              <Link to={`/${type}/${movie.id}`} className="flex ml-5" key={movie.id}>
                 <div
-                  className="movie_card_main w-[550px] h-[400px]"
+                  className="movie_card_main"
                   style={{
                     backgroundSize: 'cover',
                     backgroundPosition: 'center center',
@@ -51,31 +49,30 @@ const MovieCards = ({ movies, title }) => {
                     <div className="flex_items ml-4 mb-5">
                       <div className="start_watching start_watching_card text-white text-[1rem] ">START WATCHING</div>
                         <div className="banner_title card_title">
-                          {movie?.title}
+                          {movie?.title || movie?.name}
                         </div>
 
-                        <div className="meta mt-4 max-w-[200px] flex justify-between text-white">
-                          <div className="rating text-[1rem]">⭐{movie?.vote_average}</div>
-                          <div className="dot">•</div>
-                          <div className="rating text-[1rem]">{movie?.release_date}</div>
-                          <div className="dot">•</div>
+                        <div className="meta mt-4 w-full flex justify-between text-white">
+                          <div className="card_low_wrap flex">
+                            <div className="rating text-[1rem] flex items-center">⭐{movie?.vote_average}</div>
+                            <div className="dot ml-3 flex items-center">• </div>
+                            <div className="rating text-[1rem] ml-3 flex items-center">{moment(movie?.release_date).format('D MMM YYYY')}</div>
+                            <div className="dot ml-3 flex items-center">• </div>
 
-                          <div className="rating text-[1rem]">{movie?.original_language.toUpperCase()}</div>
+                            <div className="rating text-[1rem] ml-3 flex items-center">{movie?.original_language.toUpperCase()}</div>
+                          </div>
+
+                          <div className="add_it flex justify-center items-center w-[60px] h-[55px] mr-3" onClick={(e) => handleAddMovie(e, movie)}>
+                            <AiOutlinePlus />
+                          </div>
                         </div>
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
-
-          {/* <div
-            className="scroll-button text-white"
-            onClick={handleScrollRight}
-            aria-label="Scroll right"
-          >
-            Scroll
-          </div> */}
+          
         </div>
       ) : (
         <>Loading Movies...</>

@@ -2,9 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-  @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Bangers&family=Bebas+Neue&family=Cabin+Sketch:wght@400;700&family=Castoro&family=Cinzel:wght@500;600;700&family=Comfortaa:wght@400;500&family=Dosis:wght@300;400&family=Fredoka:wght@300&family=Gloria+Hallelujah&family=Halant:wght@300&family=IBM+Plex+Sans:wght@100;200;300;500&family=Josefin+Sans:ital,wght@0,200;0,500;1,100&family=Lobster&family=M+PLUS+1:wght@200&family=Marcellus+SC&family=Maven+Pro:wght@500;600&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;400&family=Mukta:wght@200&family=Nanum+Gothic:wght@700&family=News+Cycle&family=Newsreader:opsz,wght@6..72,200;6..72,400&family=Noto+Sans&family=Nunito+Sans&family=Open+Sans:wght@400;500&family=Oswald&family=PT+Sans+Narrow:wght@400;700&family=Phudu:wght@300;400&family=Playfair+Display:wght@500;900&family=Poppins&family=Press+Start+2P&family=Prompt&family=Quicksand:wght@300;400&family=Raleway:ital,wght@0,200;0,500;1,400&family=Readex+Pro:wght@600&family=Reem+Kufi+Fun:wght@400;500&family=Roboto:ital,wght@0,100;1,400&family=Rubik+Vinyl&family=Sarabun:wght@200&family=Satisfy&family=Signika:wght@300&family=Source+Code+Pro:wght@300;700&family=Source+Sans+Pro&family=Syncopate:wght@400;700&family=Tajawal&family=Ubuntu:ital,wght@0,300;1,700&family=Varela+Round&display=swap');
-
-
+@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Bad+Script&family=Bangers&family=Bebas+Neue&family=Cabin+Sketch:wght@400;700&family=Castoro&family=Cinzel:wght@500;600;700&family=Comfortaa:wght@400;500&family=Dosis:wght@300;400&family=Fredoka:wght@300&family=Gloria+Hallelujah&family=Halant:wght@300&family=IBM+Plex+Sans:wght@100;200;300;500&family=Josefin+Sans:ital,wght@0,200;0,500;1,100&family=Lobster&family=M+PLUS+1:wght@200&family=Marcellus+SC&family=Maven+Pro:wght@500;600&family=Montserrat+Alternates:wght@100&family=Montserrat:wght@100;400&family=Mukta:wght@200&family=Nanum+Gothic:wght@700&family=News+Cycle&family=Newsreader:opsz,wght@6..72,200;6..72,400&family=Noto+Sans&family=Nunito+Sans&family=Open+Sans:wght@400;500&family=Oswald&family=PT+Sans+Narrow:wght@400;700&family=Phudu:wght@300;400&family=Playfair+Display:wght@500;900&family=Poppins&family=Press+Start+2P&family=Prompt&family=Quicksand:wght@300;400&family=Raleway:ital,wght@0,200;0,500;1,400&family=Readex+Pro:wght@600&family=Reem+Kufi+Fun:wght@400;500&family=Roboto:ital,wght@0,100;1,400&family=Rubik+Vinyl&family=Sarabun:wght@200&family=Satisfy&family=Signika:wght@300&family=Source+Code+Pro:wght@300;700&family=Source+Sans+Pro&family=Syncopate:wght@400;700&family=Tajawal&family=Ubuntu:ital,wght@0,300;1,700&family=Varela+Round&display=swap");
 
 * {
   margin: 0;
@@ -298,47 +296,42 @@ button {
     margin-left: 0px;
   }
 
-  .s4t{
+  .s4t {
     margin-left: 0.8rem;
   }
 
-  .authsectionTitle{
-    font-size : 2rem;
+  .authsectionTitle {
+    font-size: 2rem;
   }
 
-  .bannerauthdetails{
+  .bannerauthdetails {
     margin-left: 0.2rem;
   }
 }
 
-
-
-
-
-.mobile_input:focus-visible{
+.mobile_input:focus-visible {
   border: none;
-
 }
 
-.mobile_input{
+.mobile_input {
   background: #ffffff08;
-    padding: 0.5rem;
-    border-radius: 1rem;
-    font-size: 1rem;
-    color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  font-size: 1rem;
+  color: white;
 }
-.mmtp{
+.mmtp {
   margin-top: 1rem;
   transition: all 0.3s linear;
   margin-left: 1rem;
 }
 
-.mobile_menu{
+.mobile_menu {
   transition: all 0.5s ease-in-out;
 }
 
 /* Home Css */
-.links_of_nav{
+.links_of_nav {
   font-size: 1.12rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
@@ -346,48 +339,52 @@ button {
   cursor: pointer;
 }
 
-.demos{
-  color : ''#c337639d', '#714f1d9a', '#37ce29a7', '#c5222294''
+.demos {
+  color: "" #c337639d ", " #714f1d9a ", " #37ce29a7 ", " #c5222294 "";
 }
 
-
-.start_watching{
+.start_watching {
   font-size: 1rem;
   letter-spacing: 0.2rem;
 }
 
-.banner_title{
+.banner_title {
   color: white;
   font-size: 3.2rem;
   max-width: 600px;
   line-height: 4rem;
 }
 
-.banner_description{
-    color: white;
+.banner_description {
+  color: white;
   /* font-size: 4rem; */
 }
 
-.banner_data{
+.banner_data {
   z-index: 9;
   margin-top: 10%;
   margin-left: 8%;
 }
 
-.banner_title{
+.banner_title {
   margin-top: 0.5rem;
 }
 
-.banner_description{
+.banner_description {
   font-size: 1.2rem;
   letter-spacing: 0.2rem;
   font-weight: 500;
-  max-width: 500px;
+  max-width: 800px;
   margin-top: 0.6rem;
   color: rgba(255, 255, 255, 0.806);
 }
 
-.play,.details{
+.act_name {
+  width: max-content;
+}
+
+.play,
+.details {
   width: 120px;
   height: max-content;
   padding-top: 0.2rem;
@@ -398,65 +395,611 @@ button {
   border-radius: 0.2rem;
 }
 
-.btns_banner{
+.btns_banner {
   margin-top: 2rem;
 }
 
 .play_title,
-.details_title{
+.details_title {
   font-size: 1rem;
 }
 
-.rating{
+.rating {
   font-size: 1rem;
   font-weight: 500;
   color: white;
 }
 
-.orignals_banner_logo{
+.orignals_banner_logo {
   color: white;
   font-size: 1rem;
 }
 
-
-.card_main{
+.card_main {
   z-index: 30;
 }
 
-.card_main{
+.card_main {
   box-shadow: 0px 0px 20px rgb(52, 52, 52);
 }
 
-.movie_card_main{
+.movie_card_main {
   border-radius: 0.3rem;
 }
 
-.demo{
-  color: #00000045
+.demo {
+  color: #00000045;
 }
 
-.start_watching_card{
+.start_watching_card {
   font-size: 0.9rem;
   letter-spacing: 0.2rem;
   font-weight: 500;
 }
 
-.card_title{
+.card_title {
   font-size: 2rem;
   font-weight: 600;
 }
 
-.meta{
+.meta {
   font-weight: 400;
   font-size: 1rem;
 }
 
+@media (max-width: 600px) {
+  .mui_details_box {
+    margin-top: 5.5rem !important;
+  }
+}
 
-@media (max-width: 991px) {
-  
+@media (max-width: 571px) {
+  .cst_col {
+    margin-left: 0rem;
+    /* margin-right: 1rem; */
+    display: flex;
+    justify-content: center;
+  }
+
+  .actor_img {
+    height: 270px;
+    width: 90% !important;
+  }
+}
+
+@media (max-width: 1400px) {
+  .banner_title {
+    color: white;
+    font-size: 2.5rem;
+    max-width: 600px;
+    line-height: 4rem;
+    margin-top: 0.5rem;
+  }
+
+  .start_watching {
+    font-size: 0.8rem;
+  }
+
+  .banner_data {
+    z-index: 9;
+    margin-top: 10%;
+    margin-left: 8%;
+  }
+
+  .banner_description {
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+    font-weight: 500;
+    max-width: 600px;
+    margin-top: 0.6rem;
+    color: rgba(255, 255, 255, 0.806);
+  }
+
+  .play,
+  .details {
+    width: 120px;
+    height: max-content;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+  }
+
+  .btns_banner {
+    margin-top: 2rem;
+  }
+
+  .play_title,
+  .details_title {
+    font-size: 1rem;
+  }
+
+  .rating {
+    font-size: 1rem;
+    font-weight: 500;
+    color: white;
+  }
+
+  .orignals_banner_logo {
+    color: white;
+    font-size: 1rem;
+  }
+}
+
+.hamBurgir {
+  z-index: 1000;
+}
+
+.banner_title {
+  font-size: 2.2rem;
+}
+
+.banner_description {
+  font-size: 1rem;
+  letter-spacing: 0.1rem;
+}
+
+.movie_card_main {
+  width: 550px;
+  height: 400px;
+}
+
+@media (max-width: 1376px) {
+  .content {
+    margin-top: 4rem;
+  }
+}
+
+@media (max-width: 1476px) {
+  .content {
+    margin-top: 3rem;
+  }
+
+  .movie_card_main {
+    width: 500px;
+    height: 350px;
+  }
+
+  .start_watching {
+    font-size: 0.8rem;
+  }
+
+  .card_title {
+    font-size: 1.6rem;
+    word-spacing: 0.2rem;
+    line-height: 2.2rem;
+  }
+  .meta {
+    margin-top: 1rem;
+  }
+}
+
+@media (max-width: 760px) {
+  .banner_data {
+    margin-top: 8rem;
+    margin-left: 0.6rem;
+  }
+
+  .hulu_logo {
+    margin-right: 0.4rem;
+  }
+
+  .play,
+  .details {
+    width: 80px;
+    height: max-content;
+    padding-top: 0.2rem;
+    padding-bottom: 0.2rem;
+    padding-left: 0.2rem;
+    padding-right: 0.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.2rem;
+  }
+}
+
+@media (max-width: 386px) {
+  .banner_title {
+    font-size: 1.8rem;
+  }
+
+  .banner_description {
+    font-size: 0.9rem;
+    letter-spacing: 0.03rem;
+  }
+}
+
+@media (max-width: 1106px) {
+  .act_name {
+    width: 226px;
+  }
+  .mainCard{
+    margin-top: 7rem;
+  }
 }
 
 
-.hamBurgir{
-  z-index: 1000;
+
+
+
+@media (max-width: 1106px) {
+  .content {
+    margin-top: 7rem;
+  }
+
+  .movie_card_main {
+    width: 450px;
+    height: 300px;
+  }
+
+  .start_watching {
+    font-size: 0.8rem;
+  }
+
+  .card_title {
+    font-size: 1.6rem;
+    word-spacing: 0.2rem;
+    line-height: 2.2rem;
+  }
+  .meta {
+    margin-top: 1rem;
+  }
+}
+
+.card_small {
+  width: 220px;
+  height: 280px;
+  transition: all 0.4s linear;
+  margin-top: 0.3rem;
+}
+
+.movie_card_main {
+  transition: all 0.4s linear;
+  /* margin-top: 0.3rem; */
+}
+
+.movie_card_main:hover {
+  box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.297);
+}
+
+.card_small:hover {
+  width: 220px;
+  height: 280px;
+  border-radius: 1rem;
+  box-shadow: 0px 0px 2px 2px rgba(255, 255, 255, 0.297);
+}
+
+.banner_title1 {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.806);
+  font-weight: 700;
+  line-height: 1.6rem;
+}
+
+.start_watching2 {
+  font-size: 0.9rem;
+}
+
+.logout {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.3px);
+  -webkit-backdrop-filter: blur(6.3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+
+  font-size: 1rem;
+  font-weight: 800;
+  color: rgb(255, 255, 255);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.ant-modal-content {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border-radius: 16px !important;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1) !important;
+  backdrop-filter: blur(10px) !important;
+  -webkit-backdrop-filter: blur(10px) !important;
+  border: 1px solid rgba(255, 255, 255, 0.3) !important;
+}
+
+.ant-modal-title {
+  background-color: #ffffff4e !important;
+  display: none !important;
+}
+
+.ant-btn {
+  display: none !important;
+}
+
+.ant-modal-close-x {
+  display: none !important;
+}
+
+.make_me_glass {
+  /* From https://css.glass */
+  background: rgba(255, 255, 255, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(6.8px);
+  -webkit-backdrop-filter: blur(6.8px);
+  border: 1px solid rgba(255, 255, 255, 1);
+}
+
+.gridCardImg1 {
+  width: 100%;
+  height: 500px;
+}
+
+.gridImgCOl2Ing1 {
+  width: 100%;
+  height: 250px;
+}
+
+.title_of_grid_img {
+  font-size: 1.5rem;
+}
+
+.img_detail {
+  padding-bottom: 1.5rem;
+}
+
+.movie_content {
+  margin-top: 1rem;
+  bottom: 100px;
+}
+
+.desc_banner2 {
+  font-size: 1rem;
+  letter-spacing: 0.01rem;
+}
+
+.tag {
+  width: max-content;
+  height: max-content;
+  padding-top: 0.1rem;
+  padding-left: 0.5rem;
+  padding-bottom: 0.1rem;
+  padding-right: 0.5rem;
+
+  margin-right: 0.7rem;
+
+  background: rgba(255, 255, 255, 0.23);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7.9px);
+  -webkit-backdrop-filter: blur(7.9px);
+}
+
+.bigb_btn {
+  border-radius: 100%;
+  width: max-content;
+  height: max-content;
+  padding: 1rem;
+  transition: all 0.3s linear;
+}
+
+.bigb_btn:hover {
+  transform: scale(1.04);
+}
+
+.bigb_btn:active {
+  transform: scale(0.91);
+}
+
+.mui_details {
+  overflow: auto;
+  scroll-snap-type: y mandatory;
+}
+
+.scroll_area {
+  scroll-snap-align: center;
+}
+
+.demooo {
+  color: #00000054;
+}
+
+.title_of_movie {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.mui_details_box {
+  margin-top: 15%;
+  margin-left: 4%;
+}
+
+.cast_title {
+  color: white;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  margin-left: 0.5rem;
+}
+
+.cast_card {
+  /* height: 210px; */
+  /* width: 160px; */
+  height: 100%;
+  width: 100%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+.cst_col {
+  margin-left: 1rem;
+}
+
+/* .cast_details{
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.actor_img {
+  object-fit: cover;
+  border-radius: 0.7rem;
+  box-shadow: 0px 0px 3px 5px rgba(202, 202, 202, 0.388);
+  cursor: pointer;
+  height: 210px;
+  width: 100%;
+}
+
+.act_name {
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.char_name {
+  font-size: 0.8rem;
+  font-weight: 600;
+}
+
+.genre {
+  width: max-content;
+  height: max-content;
+  padding: 0.5rem;
+  background: rgba(130, 130, 130, 0.498);
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 1rem;
+  margin-top: 0.5rem;
+}
+
+.genre:nth-child(n + 2) {
+  margin-left: 10px;
+}
+
+.movie_detail_btm_box {
+  text-decoration: none;
+  font-size: 1rem;
+  background: rgba(255, 255, 255, 0.653);
+  color: black;
+  border-radius: 0.7rem;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title_Search {
+  color: rgba(255, 255, 255, 0.888);
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin-left: 1rem;
+}
+
+.add_it {
+  background: #7777779e;
+  border: none;
+  box-shadow: 0px 0px 10px 5px #4d4d4da0;
+  color: white;
+  border-radius: 50%;
+  transition: all 0.7s linear;
+}
+
+.add_it:hover {
+  transform: scale(1.01);
+}
+
+.add_it:active {
+  transform: scale(0.91);
+}
+
+.artist_banner_desc {
+  font-size: 0.8rem;
+  line-height: 1.5rem;
+}
+
+.dob {
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+.imdb {
+  background: rgba(169, 169, 169, 0.68);
+  color: white;
+  font-size: 1rem;
+  padding: 0.5rem 2rem 0.5rem 2rem;
+  margin-top: 2rem !important;
+  border-radius: 1rem;
+}
+
+.ot_title {
+  font-size: 1rem;
+  width: 230px;
+}
+
+.logo {
+  color: #3cf370;
+}
+
+.logo2 {
+  color: white;
+}
+
+.creator {
+  width: 100%;
+  height: 100vh;
+}
+
+.mainCard {
+  width: 300px;
+  height: 500px;
+  background: rgba(87, 83, 83, 0.06);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(9.7px);
+  -webkit-backdrop-filter: blur(9.7px);
+  border: 1px solid rgba(87, 83, 83, 0.24);
+  border-radius: 3rem;
+  box-shadow: 0px 0px 40px 2px rgba(255, 255, 255, 0.489);
+}
+
+
+.img_c_box{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-top: 1.4rem;
+}
+
+.main_c_bg{
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+}
+
+.name_c{
+  color: white;
+  font-size: 1rem;
+  margin-top: 0.4rem;
+}
+
+.about_c{
+  font-size: 0.9rem;
+  color: rgba(187, 187, 187, 0.963);
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.c_social{
+  width: max-content;
+  height: max-content;
+  padding: 0.8rem;
+  background: rgba(218, 218, 218, 0.212);
+  border-radius: 100%;
 }

@@ -18,5 +18,11 @@ export const navLinks = [
         id : 'movies',
         title : 'Movies',
         to : '/movies',
+    },
+
+    {
+        id : 'creator',
+        title : 'Creator',
+        to : '/creator',
     }
 ]

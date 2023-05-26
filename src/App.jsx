@@ -1,7 +1,7 @@
 
 import React, { useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom';
-import {Auth, Home,Movies,MyStuff,SearchResults, Shows} from './pages'
+import {ArtistDetails, Auth, Creator, Home,MovieDetails,Movies,MyStuff,SearchResults, Shows} from './pages'
 import { GoogleOAuthProvider } from '@react-oauth/google';
 import {MainNavbar, Navbar} from './components/index';
 import { useLocation,useNavigate } from 'react-router-dom';
@@ -40,8 +40,11 @@ const App = () => {
             <Route exact path="/shows" element={<Shows />} />
             <Route exact path="/mystuff" element={<MyStuff />} />
             <Route exact path="/movies" element={<Movies />} />
+            <Route exact path="/creator" element={<Creator />} />
             <Route exact path="/auth" element={<Auth />} />
             <Route exact path="/search/:sqry" element={<SearchResults />} />
+            <Route exact path="/:type/:id" element={<MovieDetails />} />
+            <Route exact path="/artist/:id" element={<ArtistDetails />} />
         </Routes>
     </h1>
     </GoogleOAuthProvider>
@@ -49,3 +52,4 @@ const App = () => {
 }
 
 export default App
+
